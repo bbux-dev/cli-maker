@@ -1,10 +1,10 @@
 CLI Maker - for creating a python cli tool quickly from a template
 ================================
 
-This is a utility for generate an argparse based commandline program quickly.  It doesn't support
+This is a utility to help generate an argparse based commandline python script quickly.  It doesn't support
 all of the argparse formats, but should be sufficient to generate the skeleton quickly. The format
 is to specify a list of quoted strings that describe the `name:default:help:required` parameters for
-the args that should be a part of the command line tool.  for `required` t or true signifies the param
+the args that should be a part of the command line tool.  for `required`, t or true signifies the param
 is required. See example below.
 
 ```shell
@@ -13,6 +13,7 @@ is required. See example below.
             'log-level:logging.INFO' \
             'num-iterations'
 
+# GENERATES BELOW CODE
 #!/bin/env python
 
 import argparse
